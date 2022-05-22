@@ -25,7 +25,9 @@ st.info('''
 #####################
 # Navigation
 
-st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
+st.markdown(
+    '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">',
+    unsafe_allow_html=True)
 
 st.markdown("""
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #15A2CB;">
@@ -45,6 +47,9 @@ st.markdown("""
         <a class="nav-link" href="#work-experience">Work Experience</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="#skills">Skills</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="#social-media">Social Media</a>
       </li>
     </ul>
@@ -52,37 +57,42 @@ st.markdown("""
 </nav>
 """, unsafe_allow_html=True)
 
+
 #####################
 # Custom function for printing text
 def txt(a, b):
-  col1, col2 = st.columns([4,1])
-  with col1:
-    st.markdown(a)
-  with col2:
-    st.markdown(b)
+    col1, col2 = st.columns([4, 1])
+    with col1:
+        st.markdown(a)
+    with col2:
+        st.markdown(b)
+
 
 def txt2(a, b):
-  col1, col2 = st.columns([1,4])
-  with col1:
-    st.markdown(f'`{a}`')
-  with col2:
-    st.markdown(b)
+    col1, col2 = st.columns([1, 4])
+    with col1:
+        st.markdown(f'`{a}`')
+    with col2:
+        st.markdown(b)
+
 
 def txt3(a, b):
-  col1, col2 = st.columns([1,2])
-  with col1:
-    st.markdown(a)
-  with col2:
-    st.markdown(b)
-  
+    col1, col2 = st.columns([1, 2])
+    with col1:
+        st.markdown(a)
+    with col2:
+        st.markdown(b)
+
+
 def txt4(a, b, c):
-  col1, col2, col3 = st.columns([1.5,2,2])
-  with col1:
-    st.markdown(f'`{a}`')
-  with col2:
-    st.markdown(b)
-  with col3:
-    st.markdown(c)
+    col1, col2, col3 = st.columns([1.5, 2, 2])
+    with col1:
+        st.markdown(f'`{a}`')
+    with col2:
+        st.markdown(b)
+    with col3:
+        st.markdown(c)
+
 
 #####################
 st.markdown('''
@@ -90,14 +100,13 @@ st.markdown('''
 ''')
 
 txt('**Bachelor of Technology** (Computer Science), *Jawaharlal Nehru Technological University*, Hyderabad',
-'2010-2014')
-
+    '2010-2014')
 
 txt('**Senior Secondary**, *DAV Public School*, Ranchi',
-'2008-2010')
+    '2008-2010')
 
 txt('**Higher Secondary**, *DAV Public School*, Ranchi',
-'2008')
+    '2008')
 
 #####################
 st.markdown('''
@@ -105,7 +114,7 @@ st.markdown('''
 ''')
 
 txt('**Data Scientist**, ***Capgemini***,Client: DBS Bank, Bangalore, India',
-'08/2021 - Current')
+    '08/2021 - Current')
 st.markdown('''
 - Worked on Intelligent classification of emails using BERT model and pretrained an industry first Financial Markets NLP deep learning model - Treasury & Markets BERT (TMBERT)
 - Worked on Automatic Speech Recognition (ASR) using Nvidia's Nemo model.
@@ -117,7 +126,7 @@ st.markdown('''
 ''')
 
 txt('**Data Scientist**, ***Wipro Limited***,Client: NBN Telecom, Bangalore, India',
-'02/2021 - 08/2021')
+    '02/2021 - 08/2021')
 st.markdown('''
 - Implemented discretization and binning, data wrangling: cleaning, transforming, merging and reshaping data frames using Python-Pandas.
 - Designed data visualization to present current impact and growth using Python’s module such as Matplotlib, Seaborn and Pyplot.
@@ -126,7 +135,7 @@ st.markdown('''
 ''')
 
 txt('**Data Analyst**, ***CGI Inc***,Client: Starr Insurance, Bangalore, India',
-'11/2018 - 02/2021')
+    '11/2018 - 02/2021')
 st.markdown('''
 - Involvement of Incident Management and Problem.
 - Management to handle the process. Automation of task using Script.
@@ -134,7 +143,7 @@ st.markdown('''
 ''')
 
 txt('**Associate Software Engineer**, ***CGI Inc***,Client: Bell Canada, Bangalore, India',
-'05/2016 - 10/2018')
+    '05/2016 - 10/2018')
 st.markdown('''
 - Involvement of Incident Management and Problem
 - Designed data visualization to present current impact and growth using Python’s module such as Matplotlib, Seaborn and Pyplot.
